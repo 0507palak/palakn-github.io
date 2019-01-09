@@ -1,0 +1,41 @@
+body
+{
+    counter-reset: Serial;
+   
+}
+
+
+tr td:first-child:before
+{
+  counter-increment: Serial;      
+  content:  counter(Serial); 
+}
+
+ul
+{
+    list-style-type: none;
+    background-color: blue;
+    overflow: hidden;
+   margin:0;
+    
+}
+
+li
+{
+    float: left;
+}
+li a
+{
+    
+   
+    display: block;
+    color: white;
+    padding: 15px 18px ; 
+    text-decoration: none;
+    
+}
+
+li a:hover
+{
+    background-color: steelblue;
+}
